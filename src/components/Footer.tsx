@@ -13,20 +13,25 @@ const Footer = () => {
           className="text-center"
         >
           <h3 className="font-heading text-2xl font-semibold text-foreground mb-4">
-            40-Day Art of Surrender
+            The Art of Surrender
           </h3>
           <p className="text-muted-foreground mb-6">
-            Transform your life in 21 minutes a day
+            Transform Your Life in 21 Minutes a Day
           </p>
           
           <nav className="flex flex-wrap justify-center gap-8 mb-8">
-            {["About", "Program", "Testimonials", "Contact"].map((link) => (
+            {[
+              { label: "Testimonials", href: "#testimonials" },
+              { label: "Journey", href: "#journey" },
+              { label: "About", href: "#about" },
+              { label: "Contact", href: "#contact" },
+            ].map((link) => (
               <a
-                key={link}
-                href={`#${link.toLowerCase()}`}
+                key={link.label}
+                href={link.href}
                 className="text-muted-foreground hover:text-accent transition-colors duration-300"
               >
-                {link}
+                {link.label}
               </a>
             ))}
           </nav>

@@ -15,7 +15,16 @@ const Header = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const navLinks = ["About", "Program", "Testimonials"];
+  const scrollToContact = () => {
+    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+    setIsMobileMenuOpen(false);
+  };
+
+  const navLinks = [
+    { label: "Testimonials", href: "#testimonials" },
+    { label: "Journey", href: "#journey" },
+    { label: "About", href: "#about" },
+  ];
 
   return (
     <motion.header
@@ -38,15 +47,15 @@ const Header = () => {
           <nav className="hidden md:flex items-center gap-8">
             {navLinks.map((link) => (
               <a
-                key={link}
-                href={`#${link.toLowerCase()}`}
+                key={link.label}
+                href={link.href}
                 className="text-muted-foreground hover:text-foreground transition-colors duration-300"
               >
-                {link}
+                {link.label}
               </a>
             ))}
-            <Button variant="hero" size="default">
-              Get Started
+            <Button variant="hero" size="default" onClick={scrollToContact}>
+              Secure Your Spot
             </Button>
           </nav>
 
@@ -70,16 +79,16 @@ const Header = () => {
             <div className="flex flex-col gap-4">
               {navLinks.map((link) => (
                 <a
-                  key={link}
-                  href={`#${link.toLowerCase()}`}
+                  key={link.label}
+                  href={link.href}
                   className="text-muted-foreground hover:text-foreground transition-colors duration-300 py-2"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
-                  {link}
+                  {link.label}
                 </a>
               ))}
-              <Button variant="hero" size="default" className="mt-2">
-                Get Started
+              <Button variant="hero" size="default" className="mt-2" onClick={scrollToContact}>
+                Secure Your Spot
               </Button>
             </div>
           </motion.nav>
