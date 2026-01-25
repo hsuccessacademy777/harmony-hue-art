@@ -9,14 +9,14 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-primary text-primary-foreground hover:bg-primary/90 shadow-[0_4px_20px_-4px_hsla(20,15%,15%,0.08)] hover:shadow-[0_10px_40px_-10px_hsla(20,15%,15%,0.15)]",
+        default: "bg-primary text-primary-foreground hover:bg-primary/90 shadow-[0_4px_20px_-4px_hsla(280,30%,30%,0.1)] hover:shadow-[0_10px_40px_-10px_hsla(280,40%,30%,0.2)]",
         destructive: "bg-destructive text-destructive-foreground hover:bg-destructive/90",
         outline: "border-2 border-primary bg-transparent text-primary hover:bg-primary hover:text-primary-foreground",
         secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent/10 hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
-        hero: "bg-primary text-primary-foreground font-semibold shadow-[0_10px_40px_-10px_hsla(20,15%,15%,0.15)] hover:shadow-[0_0_40px_-10px_hsla(38,65%,55%,0.3)] hover:scale-[1.02] active:scale-[0.98]",
-        golden: "bg-accent text-accent-foreground font-semibold shadow-[0_10px_40px_-10px_hsla(20,15%,15%,0.15)] hover:shadow-[0_0_40px_-10px_hsla(38,65%,55%,0.3)] hover:scale-[1.02] active:scale-[0.98]",
+        hero: "bg-[linear-gradient(135deg,hsl(280_60%_40%)_0%,hsl(320_70%_50%)_100%)] text-white font-semibold shadow-[0_10px_40px_-10px_hsla(280,40%,30%,0.3)] hover:shadow-[0_0_40px_-10px_hsla(320,70%,50%,0.5)] hover:scale-[1.02] active:scale-[0.98] hover:brightness-110",
+        golden: "bg-[linear-gradient(135deg,hsl(320_70%_45%)_0%,hsl(340_65%_55%)_100%)] text-white font-semibold shadow-[0_10px_40px_-10px_hsla(320,50%,40%,0.3)] hover:shadow-[0_0_40px_-10px_hsla(340,70%,50%,0.5)] hover:scale-[1.02] active:scale-[0.98] hover:brightness-110",
       },
       size: {
         default: "h-10 px-4 py-2",

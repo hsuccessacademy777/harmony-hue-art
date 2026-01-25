@@ -5,11 +5,11 @@ import { ArrowRight } from "lucide-react";
 const CTASection = () => {
   return (
     <section className="py-24 relative overflow-hidden">
-      {/* Background */}
-      <div className="absolute inset-0 bg-primary" />
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-0 left-1/4 w-96 h-96 bg-accent rounded-full blur-3xl" />
-        <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-accent rounded-full blur-3xl" />
+      {/* Background - Deep purple gradient */}
+      <div className="absolute inset-0 bg-[linear-gradient(135deg,hsl(280_60%_25%)_0%,hsl(320_60%_35%)_50%,hsl(340_55%_40%)_100%)]" />
+      <div className="absolute inset-0 opacity-20">
+        <div className="absolute top-0 left-1/4 w-96 h-96 bg-[hsl(320_70%_60%)] rounded-full blur-3xl" />
+        <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-[hsl(280_60%_50%)] rounded-full blur-3xl" />
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
@@ -20,10 +20,10 @@ const CTASection = () => {
           viewport={{ once: true }}
           className="text-center max-w-3xl mx-auto"
         >
-          <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl font-semibold text-primary-foreground mb-6">
+          <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl font-semibold text-white mb-6">
             Begin Your Transformation Today
           </h2>
-          <p className="text-primary-foreground/80 text-xl mb-10 leading-relaxed">
+          <p className="text-white/80 text-xl mb-10 leading-relaxed">
             Join thousands who have discovered the profound peace that comes 
             from the art of surrender. Your 40-day journey awaits.
           </p>
@@ -40,7 +40,7 @@ const CTASection = () => {
             </Button>
           </motion.div>
 
-          <p className="text-primary-foreground/60 text-sm mt-6">
+          <p className="text-white/60 text-sm mt-6">
             No prior experience required • Guided daily practice • Lifetime access
           </p>
         </motion.div>

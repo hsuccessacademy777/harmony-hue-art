@@ -12,7 +12,7 @@ const HeroSection = () => {
           alt="Serene lotus flower on calm water at sunrise"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/40 to-background" />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/50 to-background" />
       </div>
 
       {/* Content */}
@@ -76,7 +76,7 @@ const HeroSection = () => {
           <motion.div
             animate={{ y: [0, 10, 0] }}
             transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
-            className="w-6 h-10 rounded-full border-2 border-primary/30 flex justify-center pt-2"
+            className="w-6 h-10 rounded-full border-2 border-primary/40 flex justify-center pt-2"
           >
             <motion.div className="w-1.5 h-1.5 bg-primary rounded-full" />
           </motion.div>

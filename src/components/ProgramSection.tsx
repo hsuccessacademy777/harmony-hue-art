@@ -36,7 +36,7 @@ const pillars = [
 
 const ProgramSection = () => {
   return (
-    <section className="py-24 bg-secondary/30" id="program">
+    <section className="py-24 bg-secondary/40" id="program">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -68,7 +68,7 @@ const ProgramSection = () => {
               className="group"
             >
               <div className="h-full p-8 rounded-2xl bg-card shadow-soft hover:shadow-elevated transition-all duration-300 border border-border/50">
-                <div className="w-14 h-14 rounded-xl bg-accent/10 flex items-center justify-center mb-6 group-hover:bg-accent/20 transition-colors duration-300">
+                <div className="w-14 h-14 rounded-xl bg-[linear-gradient(135deg,hsl(280_60%_40%/0.15)_0%,hsl(320_70%_50%/0.15)_100%)] flex items-center justify-center mb-6 group-hover:bg-[linear-gradient(135deg,hsl(280_60%_40%/0.25)_0%,hsl(320_70%_50%/0.25)_100%)] transition-colors duration-300">
                   <pillar.icon className="w-7 h-7 text-accent" />
                 </div>
                 <h3 className="font-heading text-2xl font-semibold text-foreground mb-3">
