@@ -3,6 +3,10 @@ import { Button } from "@/components/ui/button";
 import heroBg from "@/assets/hero-bg.jpg";
 
 const HeroSection = () => {
+  const scrollToContact = () => {
+    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
@@ -23,45 +27,66 @@ const HeroSection = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="max-w-4xl mx-auto"
         >
-          <motion.p
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.2, duration: 0.6 }}
-            className="text-accent font-medium tracking-widest uppercase text-sm mb-6"
-          >
-            A Transformative Journey
-          </motion.p>
-
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3, duration: 0.8 }}
-            className="font-heading text-5xl md:text-6xl lg:text-7xl font-semibold text-foreground leading-tight mb-6"
+            transition={{ delay: 0.2, duration: 0.8 }}
+            className="font-heading text-4xl md:text-5xl lg:text-6xl font-light text-foreground leading-tight mb-6"
           >
-            40-Day Art of{" "}
-            <span className="text-gradient">Surrender</span>
+            Transform Your Life in Just<br />
+            <span className="text-gradient font-semibold">21 Minutes a Day</span>
           </motion.h1>
 
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.5, duration: 0.8 }}
-            className="text-xl md:text-2xl text-muted-foreground font-light mb-8 max-w-2xl mx-auto"
+            transition={{ delay: 0.4, duration: 0.8 }}
+            className="text-xl md:text-2xl text-muted-foreground font-light mb-10 max-w-2xl mx-auto"
           >
-            Transform Your Life in Just 21 Minutes a Day
+            What If Letting Go Was Your Greatest Power?
           </motion.p>
+
+          {/* Stats */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.5, duration: 0.8 }}
+            className="flex justify-center gap-12 md:gap-20 mb-10 flex-wrap"
+          >
+            {[
+              { number: "40", label: "Days" },
+              { number: "21", label: "Minutes Daily" },
+              { number: "∞", label: "Life-Changing" },
+            ].map((stat) => (
+              <div key={stat.label} className="text-center">
+                <div className="font-heading text-4xl md:text-5xl font-light text-gradient">
+                  {stat.number}
+                </div>
+                <div className="text-sm text-muted-foreground uppercase tracking-wide mt-1">
+                  {stat.label}
+                </div>
+              </div>
+            ))}
+          </motion.div>
+
+          {/* Date Banner */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ delay: 0.6, duration: 0.6 }}
+            className="inline-block bg-card/80 backdrop-blur-md px-8 py-5 rounded-full border border-border/50 shadow-soft mb-8"
+          >
+            <p className="font-semibold text-foreground text-lg">Program Starts</p>
+            <p className="text-muted-foreground">Monday, February 16th, 2026 | 6:00 AM - 6:21 AM IST</p>
+          </motion.div>
 
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.7, duration: 0.8 }}
-            className="flex flex-col sm:flex-row gap-4 justify-center items-center"
+            transition={{ delay: 0.8, duration: 0.8 }}
           >
-            <Button variant="hero" size="xl">
-              Begin Your Journey
-            </Button>
-            <Button variant="outline" size="lg">
-              Learn More
+            <Button variant="hero" size="xl" onClick={scrollToContact}>
+              Secure Your Spot Now
             </Button>
           </motion.div>
         </motion.div>

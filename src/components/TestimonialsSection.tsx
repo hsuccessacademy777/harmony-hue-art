@@ -3,19 +3,28 @@ import { Quote } from "lucide-react";
 
 const testimonials = [
   {
-    quote: "This program changed my relationship with stress forever. The daily practice became the anchor I didn't know I needed.",
-    author: "Priya M.",
-    role: "Business Executive",
+    quote: "I'm climbing the <strong>Mount Everest of my inner self</strong>... The control is in my hand. I'm not dependent on others for my happiness, for my peace.",
+    author: "Abhinav Mathur",
   },
   {
-    quote: "21 minutes seemed too simple, but the depth of transformation I've experienced is remarkable. I'm more peaceful now than I've ever been.",
-    author: "Michael R.",
-    role: "Teacher",
+    quote: "I feel <strong>less anxiety, less worry</strong>... your mind is more calmer. I feel <strong>calm</strong>... Everything is in place, everything is sorted.",
+    author: "Priyanka Uppal",
   },
   {
-    quote: "Ravinder's guidance is gentle yet profound. The 40 days flew by, and I emerged a different person – more present, more content.",
-    author: "Sarah K.",
-    role: "Healthcare Professional",
+    quote: "In the last 30 days, through your guidance, I immediately went into surrender... I found <strong>peace</strong>.",
+    author: "Sangeeta Subhash",
+  },
+  {
+    quote: "I realized it's <strong>very easier to process emotions</strong> now... I was <strong>calmer</strong> compared to what I was.",
+    author: "Kalpita",
+  },
+  {
+    quote: "<strong>Resistance has decreased</strong>... I was allowing emotions, and then I could just be at peace after 30 seconds or one minute.",
+    author: "Monika Jain",
+  },
+  {
+    quote: "A sense of <strong>patience has started coming</strong> now... I'm becoming more conscious in each and every moment.",
+    author: "Priti Manish",
   },
 ];
 
@@ -30,37 +39,30 @@ const TestimonialsSection = () => {
           viewport={{ once: true }}
           className="text-center max-w-3xl mx-auto mb-16"
         >
-          <p className="text-accent font-medium tracking-widest uppercase text-sm mb-4">
-            Transformations
-          </p>
-          <h2 className="font-heading text-4xl md:text-5xl font-semibold text-foreground">
-            Stories of Surrender
+          <h2 className="font-heading text-4xl md:text-5xl font-light text-foreground">
+            Real People. Real Transformations.
           </h2>
         </motion.div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
             <motion.div
               key={testimonial.author}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: index * 0.15 }}
+              transition={{ duration: 0.6, delay: index * 0.1 }}
               viewport={{ once: true }}
               className="relative"
             >
-              <div className="h-full p-8 rounded-2xl card-gradient shadow-soft border border-border/30">
-                <Quote className="w-10 h-10 text-accent/40 mb-6" />
-                <p className="text-foreground text-lg leading-relaxed mb-8 italic">
-                  "{testimonial.quote}"
+              <div className="h-full p-8 rounded-2xl card-gradient shadow-soft border-l-4 border-l-primary border border-border/30">
+                <Quote className="w-8 h-8 text-accent/40 mb-4" />
+                <p 
+                  className="text-foreground text-lg leading-relaxed mb-6 italic"
+                  dangerouslySetInnerHTML={{ __html: `"${testimonial.quote}"` }}
+                />
+                <p className="font-semibold text-accent">
+                  — {testimonial.author}
                 </p>
-                <div className="border-t border-border/50 pt-6">
-                  <p className="font-heading text-xl font-semibold text-foreground">
-                    {testimonial.author}
-                  </p>
-                  <p className="text-muted-foreground text-sm">
-                    {testimonial.role}
-                  </p>
-                </div>
               </div>
             </motion.div>
           ))}
