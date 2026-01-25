@@ -22,9 +22,9 @@ const AboutSection = () => {
                   className="w-full max-w-md mx-auto object-cover bg-gradient-to-b from-card to-secondary"
                 />
               </div>
-              {/* Decorative Element */}
-              <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-accent/20 rounded-full blur-2xl" />
-              <div className="absolute -top-6 -left-6 w-24 h-24 bg-primary/10 rounded-full blur-xl" />
+              {/* Decorative Elements - purple theme */}
+              <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-[hsl(320_70%_50%/0.25)] rounded-full blur-2xl" />
+              <div className="absolute -top-6 -left-6 w-24 h-24 bg-[hsl(280_60%_40%/0.15)] rounded-full blur-xl" />
             </div>
           </motion.div>
 

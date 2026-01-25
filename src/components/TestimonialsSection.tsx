@@ -49,7 +49,7 @@ const TestimonialsSection = () => {
               className="relative"
             >
               <div className="h-full p-8 rounded-2xl card-gradient shadow-soft border border-border/30">
-                <Quote className="w-10 h-10 text-accent/30 mb-6" />
+                <Quote className="w-10 h-10 text-accent/40 mb-6" />
                 <p className="text-foreground text-lg leading-relaxed mb-8 italic">
                   "{testimonial.quote}"
                 </p>
