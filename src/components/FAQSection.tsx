@@ -109,7 +109,7 @@ This program is your opportunity to embrace life with trust, clarity, and ease. 
 
 const FAQSection = () => {
   return (
-    <section id="faq" className="py-20 bg-secondary/30">
+    <section id="faq" className="py-20 bg-accent/10">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-4">
@@ -126,9 +126,9 @@ const FAQSection = () => {
               <AccordionItem
                 key={index}
                 value={`item-${index}`}
-                className="bg-background/80 backdrop-blur-sm rounded-xl border border-primary/20 px-6 shadow-sm"
+                className="bg-background/80 backdrop-blur-sm rounded-xl border border-accent/30 px-6 shadow-sm"
               >
-                <AccordionTrigger className="text-left font-heading font-semibold text-foreground hover:text-primary hover:no-underline py-5">
+                <AccordionTrigger className="text-left font-heading font-semibold text-foreground hover:text-accent hover:no-underline py-5">
                   {faq.question}
                 </AccordionTrigger>
                 <AccordionContent className="text-muted-foreground whitespace-pre-line pb-5">
