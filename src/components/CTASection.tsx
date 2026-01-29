@@ -55,15 +55,6 @@ const CTASection = () => {
             </a>
           </motion.div>
 
-          <motion.p
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 0.8, delay: 0.5 }}
-            viewport={{ once: true }}
-            className="text-white/70 text-lg italic mt-12"
-          >
-            "Aik shanti thi. Aik shanti hai." (There was peace. There is peace.) — Abhinav Mathur
-          </motion.p>
         </motion.div>
       </div>
     </section>
