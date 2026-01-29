@@ -126,9 +126,9 @@ const FAQSection = () => {
               <AccordionItem
                 key={index}
                 value={`item-${index}`}
-                className="bg-background/80 backdrop-blur-sm rounded-xl border border-accent/30 px-6 shadow-sm"
+                className="bg-accent rounded-xl border-none px-6 shadow-sm overflow-hidden"
               >
-                <AccordionTrigger className="text-left font-heading font-semibold text-foreground hover:text-accent hover:no-underline py-5">
+                <AccordionTrigger className="text-left font-heading font-semibold text-accent-foreground hover:text-accent-foreground/80 hover:no-underline py-5 [&>svg]:text-accent-foreground">
                   {faq.question}
                 </AccordionTrigger>
                 <AccordionContent className="text-muted-foreground whitespace-pre-line pb-5">
