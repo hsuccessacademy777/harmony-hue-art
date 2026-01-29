@@ -14,7 +14,7 @@ export default {
     },
     extend: {
       fontFamily: {
-        heading: ['"Cormorant Garamond"', 'serif'],
+        heading: ['Nunito', 'sans-serif'],
         body: ['Lato', 'sans-serif'],
       },
       colors: {
