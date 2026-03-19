@@ -77,7 +77,7 @@ const HeroSection = () => {
             className="inline-block bg-card/80 backdrop-blur-md px-8 py-5 rounded-full border border-border/50 shadow-soft mb-8"
           >
             <p className="font-semibold text-foreground text-lg">Program Starts</p>
-            <p className="text-muted-foreground">Monday, February 16th, 2026 | 7:00 PM - 7:21 PM IST</p>
+            <p className="text-muted-foreground">Friday, March 27th, 2026 | 7:00 PM - 7:21 PM IST</p>
           </motion.div>
 
           <motion.div
