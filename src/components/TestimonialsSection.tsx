@@ -24,7 +24,7 @@ const testimonials = [
   },
   {
     quote: "A sense of <strong>patience has started coming</strong> now... I'm becoming more conscious in each and every moment.",
-    author: "Priti Manish",
+    author: "Pretty Manish",
   },
 ];
 
