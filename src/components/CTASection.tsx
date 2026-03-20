@@ -21,7 +21,7 @@ const CTASection = () => {
           className="text-center max-w-3xl mx-auto"
         >
           <h2 className="font-heading text-4xl md:text-5xl font-light text-white mb-6">
-            Your Transformation Begins February 16th
+            Your Transformation Begins March 27th
           </h2>
           <p className="text-white/80 text-xl mb-4">
             Spaces are intentionally limited to maintain the intimacy and power of this experience.
